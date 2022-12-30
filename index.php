@@ -1,7 +1,7 @@
 <?php
     session_start();
     ob_start();
-    include('conexao.php');
+    include('config/conexao.php');
 ?>
 
 <!DOCTYPE html>
@@ -67,6 +67,12 @@
     </form>
 
     <div class="calendar"></div>
+
+    <?php
+        
+        $objConect=new Models\ModelConect();
+        var_dump($objConect->conectDB()); 
+    ?>
 
     <script src="<?php echo DIRPAGE.'lib/js/FullCalendar/main.min.js'; ?>"></script>
     <script src="<?php echo DIRPAGE.'lib/js/javascript.js'; ?>"></script>
