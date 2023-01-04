@@ -1,20 +1,10 @@
-<?php
-    session_start();
-    ob_start();
-    include('config/conexao.php');
-?>
+<?php include("config/conexao.php"); ?>
+<?php include(DIRREQ."lib/html/header.php"); ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zuno - Signin</title>
-    <link rel="stylesheet" href="<?php echo DIRPAGE.'lib/css/style.css'; ?>">
-    <link rel="stylesheet" href="<?php echo DIRPAGE.'lib/js/FullCalendar/main.min.css'; ?>">
-</head>
-<body>
+    <a href="<?php echo DIRPAGE.'views/user'; ?>">Calendário do Usuário</a><br><br>
+    <a href="<?php echo DIRPAGE.'views/manager'; ?>">Calendário do Gerente</a>
+
+<?php include(DIRREQ."lib/html/footer.php"); ?>
 <?php
     // echo password_hash(123456, PASSWORD_DEFAULT);
     ?>
@@ -55,26 +45,3 @@
     //     unset($_SESSION['msg']);
     // }
     ?>
-
-    <form method="POST" action="">
-        <label>Usuário</label>
-        <input type="text" name="usuario" placeholder="Digite o usuário" value="<?php if(isset($dados['usuario'])){ echo $dados['usuario']; } ?>"><br><br>
-
-        <label>Senha</label>
-        <input type="password" name="senha_usuario" placeholder="Digite a senha" value="<?php if(isset($dados['senha_usuario'])){ echo $dados['senha_usuario']; } ?>"><br><br>
-
-        <input type="submit" value="Acessar" name="SendLogin">
-    </form>
-
-    <div class="calendar"></div>
-
-    <?php
-        
-        $objConect=new Models\ModelConect();
-        var_dump($objConect->conectDB()); 
-    ?>
-
-    <script src="<?php echo DIRPAGE.'lib/js/FullCalendar/main.min.js'; ?>"></script>
-    <script src="<?php echo DIRPAGE.'lib/js/javascript.js'; ?>"></script>
-</body>
-</html>

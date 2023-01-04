@@ -1,9 +1,9 @@
 <?php
 namespace Models;
 
-class ModelConect
+abstract class ModelConect
 {
-    public function conectDB()
+    protected function conectDB()
     {
         try{
             $con=new \PDO("mysql:host=".HOST.";dbname=".DB."",USER,PASS);
