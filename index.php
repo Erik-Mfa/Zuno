@@ -5,12 +5,11 @@
     <a href="<?php echo DIRPAGE.'views/manager'; ?>">Calendário do Gerente</a>
 
 <?php include(DIRREQ."lib/html/footer.php"); ?>
+
 <?php
     // echo password_hash(123456, PASSWORD_DEFAULT);
-    ?>
-
-    <h1>Login</h1>
-    <?php
+   
+   
     // $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
     // if (!empty($dados['SendLogin'])) {
