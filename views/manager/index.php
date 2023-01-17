@@ -1,6 +1,6 @@
 <?php include("../../config/conexao.php"); ?>
 <?php include(DIRREQ."lib/html/header.php"); ?>
 
-    <div class="calendarManager"></div>
+    <div class="calendarManager calendar"></div>
 
 <?php include(DIRREQ."lib/html/footer.php"); ?>
