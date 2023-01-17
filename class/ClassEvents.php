@@ -47,4 +47,12 @@ class ClassEvents extends ModelConect
         $b->execute();
     }
 
+    #Deletar no banco de dados
+    public function deleteEvent($id)
+    {
+        $b=$this->conectDB()->prepare("delete from events where id=?");
+        $b->bindParam(1, $id, \PDO::PARAM_INT);
+        $b->execute();
+    }
+
 }
