@@ -13,4 +13,14 @@ class ClassUsers extends ModelConect
         $b->bindParam(3, $password, \PDO::PARAM_STR);
         $b->execute();
     }
+
+    #Buscar eventos pelo id
+    public function getUser($usuario, $password)
+    {
+        $b=$this->conectDB()->prepare("select * from usuarios where name=? and password=?");
+        $b->bindParam(1, $usuario, \PDO::PARAM_INT);
+        $b->bindParam(2, $password, \PDO::PARAM_INT);
+        $b->execute();
+        return $f=$b->fetch(\PDO::FETCH_ASSOC);
+    }
 }
