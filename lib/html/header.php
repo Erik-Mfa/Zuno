@@ -10,3 +10,4 @@
     <link rel="stylesheet" href="<?php echo DIRPAGE.'lib/css/style.css'; ?>">
 </head>
 <body>
+<div class="container">

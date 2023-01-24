@@ -14,7 +14,8 @@ class ClassEvents extends ModelConect
         return json_encode($f);
     }
 
-    public function createEvent($id=0,$title,$description,$color='blue',$start,$end)
+    #Criar evento
+    public function createEvent($id=0,$title,$description,$color,$start,$end)
     {   
         $b=$this->conectDB()->prepare("insert into events values (?,?,?,?,?,?)");
         $b->bindParam(1, $id, \PDO::PARAM_INT);
@@ -55,4 +56,16 @@ class ClassEvents extends ModelConect
         $b->execute();
     }
 
+     #Buscar eventos para comparação de nova data
+     public function getDuplicateEvents($start, $end)
+     {
+         $b=$this->conectDB()->prepare("select * from events where start <= ? and end >= ? or start <= ? and end >= ?");
+         $b->bindParam(1, $start, \PDO::PARAM_STR);
+         $b->bindParam(2, $start, \PDO::PARAM_STR);
+         $b->bindParam(3, $end, \PDO::PARAM_STR);
+         $b->bindParam(4, $end, \PDO::PARAM_STR);
+         $b->execute();
+         return $f=$b->fetch(\PDO::FETCH_ASSOC);
+     }
+ 
 }
