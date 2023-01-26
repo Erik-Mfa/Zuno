@@ -1,0 +1,25 @@
+{
+  "name": "zuno",
+  "version": "1.0.0",
+  "description": "Projeto zuno",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Erik-Mfa/Zuno.git"
+  },
+  "author": "Erik-Mfa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Erik-Mfa/Zuno/issues"
+  },
+  "homepage": "https://github.com/Erik-Mfa/Zuno#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
