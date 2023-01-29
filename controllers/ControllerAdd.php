@@ -1,7 +1,7 @@
 <?php
 include ("../config/conexao.php");
 
-$btn=filter_input(INPUT_POST,'btn',FILTER_DEFAULT);
+$btn = filter_input(INPUT_POST,'btn',FILTER_DEFAULT);
 
 if(!empty($btn)){
     $objEvents=new \Classes\ClassEvents();
@@ -29,9 +29,7 @@ if(!empty($btn)){
         $start->format("Y-m-d H:i:s"),
         $start->modify('+'.$horasAtendimento.'hours')->format("Y-m-d H:i:s")
     );
-
     header('Location: ' . DIRPAGE . 'views/user');
-};
+    };
 
-    
 }

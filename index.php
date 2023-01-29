@@ -40,16 +40,10 @@
         </form>
 
     </div>
-</div>
-
-    
-            
+</div>    
 
             <!-- <div class="form-group mt-4 mb-3 text-center">
                 <input class="form-control" type="submit" value="Cadastrar usuário">
             </div> -->
         
-
-
-
 <?php include(DIRREQ."lib/html/footer.php"); ?>
