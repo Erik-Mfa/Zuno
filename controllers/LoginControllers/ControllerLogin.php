@@ -1,6 +1,6 @@
 <?php
 
-include ("../config/conexao.php");
+include ("../../config/conexao.php");
 
 $btn=filter_input(INPUT_POST,'btn',FILTER_DEFAULT);
 

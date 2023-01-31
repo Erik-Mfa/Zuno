@@ -4,7 +4,7 @@
 <div class="container h-100 d-flex justify-content-center text-bg-success">
     <div class="container text-bg-light border-rounded mt-4 mb-4 p-5 rounded-3" style="width: 42%;">
 
-        <form name="formLogin" id="formLogin" method="post" action="<?php echo DIRPAGE.'controllers/ControllerLogin.php';?>">
+        <form name="formLogin" id="formLogin" method="post" action="<?php echo DIRPAGE.'controllers/LoginControllers/ControllerLogin.php';?>">
             
         <b><p class="row justify-content-center" style="font-family: 'Lato', sans-serif;">FAÇA SEU LOGIN</p></b>
 

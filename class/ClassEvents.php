@@ -15,15 +15,14 @@ class ClassEvents extends ModelConect
     }
 
     #Criar evento
-    public function createEvent($id=0,$title,$description,$color,$start,$end)
+    public function createEvent($id=0,$title,$description,$start,$end)
     {   
-        $b=$this->conectDB()->prepare("insert into events values (?,?,?,?,?,?)");
+        $b=$this->conectDB()->prepare("insert into events values (?,?,?,?,?)");
         $b->bindParam(1, $id, \PDO::PARAM_INT);
         $b->bindParam(2, $title, \PDO::PARAM_STR);
         $b->bindParam(3, $description, \PDO::PARAM_STR);
-        $b->bindParam(4, $color, \PDO::PARAM_STR);
-        $b->bindParam(5, $start, \PDO::PARAM_STR);
-        $b->bindParam(6, $end, \PDO::PARAM_STR);
+        $b->bindParam(4, $start, \PDO::PARAM_STR);
+        $b->bindParam(5, $end, \PDO::PARAM_STR);
         $b->execute();
     }
 
