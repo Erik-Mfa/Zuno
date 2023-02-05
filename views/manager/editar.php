@@ -1,14 +1,14 @@
-<?php include("../../config/conexao.php"); ?>
-    <?php include(DIRREQ."lib/html/header.php"); ?>
-    <?php
+<?php include("../../config/conexao.php");?>
+<?php include(DIRREQ."lib/html/header.php");?>
+<?php
 $objEvents=new \Classes\ClassEvents();
-$events=$objEvents->getEventsById($_GET['id']);
-$date=new \DateTime($events['start']);
+$events = $objEvents->getEventsById($_GET['id']);
+$date = new \DateTime($events['start']);
 ?>
 <div class="container">
     <div class="container justify-items-center border col-4 mt-4">
         <a id="delete" href="<?php echo DIRPAGE.'controllers/EventsControllers/ControllerDelete.php?id='.$_GET['id']; ?>"><img src="<?php echo DIRPAGE.'img/button-trash.png' ?>" alt=""></a>
-        <form name="formEdit" id="formEdit" method="post" action="<?php echo DIRPAGE.'controllers/EventsController/EventsControllers/ControllerEdit.php'; ?>">
+        <form name="formEdit" id="formEdit" method="post" action="<?php echo DIRPAGE.'controllers/EventsControllers/ControllerEdit.php'; ?>">
             <input class="form-control"  type="hidden" name="id" id="id" value="<?php echo $_GET['id']; ?>"><br>
 
             <div>

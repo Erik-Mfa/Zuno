@@ -4,7 +4,7 @@ include ("../../config/conexao.php");
 
 $btn=filter_input(INPUT_POST,'btn',FILTER_DEFAULT);
 
-$objUser=new \Classes\ClassUsers();
+$objUser = new \Classes\ClassUsers();
 
 if(!empty($btn)){
     $usuario=filter_input(INPUT_POST,'name',FILTER_DEFAULT);

@@ -22,7 +22,7 @@
             <div class="col input-group border-bottom p-0">
                 <span class="input-group-text border border-0 bi-lock-fill text-bg-light p-3"></span>
                 <div class="form-floating">
-                    <input class="border border-0 form-control" type="text" name="password" id="password" placeholder="Senha: ">
+                    <input class="border border-0 form-control" type="password" name="password" id="password" placeholder="Senha: ">
                     <label for="password">Senha: </label>
                 </div>
             </div>
