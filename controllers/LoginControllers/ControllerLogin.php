@@ -16,8 +16,12 @@ if(!empty($btn)){
         $f = $user->fetch(\PDO::FETCH_ASSOC);
 
         if($f['name'] == "admin" && $f['password'] == "zuno"){
+            session_start();
+            $_SESSION["role"] = "manager";
             header('Location: ' . DIRPAGE . 'views/manager');
         }else{
+            session_start();
+            $_SESSION["role"] = "user";
             header('Location: ' . DIRPAGE . 'views/user');
         }
     }else{
