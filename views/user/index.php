@@ -4,7 +4,7 @@
 
 
 <!-- CONTEUDO CARREGADO PELAS TABS ----->
-<div class="tab-pane fade show active p-3" id="nav-calendario" role="tabpanel" aria-labelledby="nav-calendario-tab">
+<div class="tab-pane fade show active p-3 container" id="nav-calendario" role="tabpanel" aria-labelledby="nav-calendario-tab">
     <div class="calendarUser calendar bg-light"></div>
 </div>
 

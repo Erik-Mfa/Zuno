@@ -2,5 +2,5 @@
 
 include ("../../config/conexao.php");
 
-$objEvents=new \Classes\ClassAvailableDays();
+$objEvents=new \Classes\ClassAvailable();
 echo $objEvents->getAvailableDays();

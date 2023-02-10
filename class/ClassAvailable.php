@@ -3,7 +3,7 @@ namespace Classes;
 
 use Models\ModelConect;
 
-class ClassAvailableDays extends ModelConect
+class ClassAvailable extends ModelConect
 {
     public function getAvailableDays()
     {
@@ -13,5 +13,12 @@ class ClassAvailableDays extends ModelConect
         return json_encode($f);
     }
 
-    
+    public function getAvailableTime()
+    {
+        $b=$this->conectDB()->prepare("select * from available_time");
+        $b->execute();
+        $f=$b->fetchAll(\PDO::FETCH_ASSOC);
+        return json_encode($f);
+    }
+
 };

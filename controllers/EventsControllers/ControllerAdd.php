@@ -11,7 +11,6 @@ if(!empty($btn)){
     $start = new \DateTime($date.' '.$time, new \DateTimeZone('America/Sao_Paulo'));
 
     $objEvents = new \Classes\ClassEvents();    
-    $objAvailable = new \Classes\ClassAvailableDays();
     
     //Formatando data
     $startEvent = $start->format("Y-m-d H:i:s");
