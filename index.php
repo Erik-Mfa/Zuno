@@ -1,5 +1,9 @@
 <?php include("config/conexao.php"); ?>
 <?php include(DIRREQ."lib/html/header.php"); ?>
+<?php 
+session_unset();
+?>
+
 
 <div class="container h-100 d-flex justify-content-center text-bg-success">
     <div class="container text-bg-light border-rounded mt-4 mb-4 p-5 rounded-3" style="width: 42%;">

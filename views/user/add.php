@@ -12,10 +12,6 @@
                     <input class="form-control" type="text" name="title" id="title"><br>
                 </div>
                 <div>
-                    <label class="form-label" for="description">Descrição: </label>
-                    <input class="form-control"  type="text" name="description" id="description"><br>
-                </div>
-                <div>
                     <label class="form-label" for="date">Data: </label>
                     <input class="form-control" type="date" name="date" id="date" value="<?php echo $date->format("Y-m-d"); ?>"><br>
                 </div>

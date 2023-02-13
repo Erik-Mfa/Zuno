@@ -35,7 +35,6 @@ class ClassEvents extends ModelConect
         return $f=$b->fetch(\PDO::FETCH_ASSOC);
     }
 
-
     #Update no banco de dados
     public function updateEvent($id,$title,$description,$start)
     {
@@ -55,7 +54,7 @@ class ClassEvents extends ModelConect
         $b->execute();
     }
 
-     #Buscar eventos para comparação de nova data
+     #Buscar eventos em uso para comparação de nova data
      public function getDuplicateEvents($start, $end)
      {
          $b=$this->conectDB()->prepare("select * from events where start <= ? and end >= ? or start <= ? and end >= ?");

@@ -1,6 +1,6 @@
 <?php
-
 include ("../../config/conexao.php");
+session_start();
 
 $btn=filter_input(INPUT_POST,'btn',FILTER_DEFAULT);
 
@@ -16,11 +16,9 @@ if(!empty($btn)){
         $f = $user->fetch(\PDO::FETCH_ASSOC);
 
         if($f['name'] == "admin" && $f['password'] == "zuno"){
-            session_start();
             $_SESSION["role"] = "manager";
             header('Location: ' . DIRPAGE . 'views/manager');
         }else{
-            session_start();
             $_SESSION["role"] = "user";
             header('Location: ' . DIRPAGE . 'views/user');
         }

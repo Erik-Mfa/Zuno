@@ -17,3 +17,4 @@ $objEvents->updateEvent(
     $description,
     $start->format("Y-m-d H:i:s")
 );
+header('Location: ' . DIRPAGE . 'views/manager');
