@@ -1,11 +1,11 @@
-<?php include("../../config/conexao.php"); ?>
-<?php include(DIRREQ."lib/html/header.php"); ?>
-<?php include(DIRREQ."lib/html/body.php"); ?>
+<?php include("../../config/conexao.php")?>
+<?php include(DIRREQ."lib/html/header.php")?>
+<?php include(DIRREQ."lib/html/body.php")?>
 <?php 
 if($_SESSION['role'] != "manager"){
     header('Location: ' . DIRPAGE . 'index.php');
-}
-?>
+}?>
+
 <!-- DIVS PARA CARREGAR O CONTEUDO ----->
 <div class="tab-pane fade show active p-3 container" id="nav-calendario" role="tabpanel" aria-labelledby="nav-calendario-tab">
         <div class="calendarManager calendar bg-light" id="nav-calendario"></div>

@@ -1,6 +1,6 @@
-<?php include("../../config/conexao.php");?>
-<?php include(DIRREQ."lib/html/header.php"); ?>
-<?php include(DIRREQ."lib/html/body.php"); ?>
+<?php include("../../config/conexao.php")?>
+<?php include(DIRREQ."lib/html/header.php")?>
+<?php include(DIRREQ."lib/html/body.php")?>
 <?php 
 if($_SESSION['role'] != "user"){
     header('Location: ' . DIRPAGE . 'index.php');

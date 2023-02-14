@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="<?php echo DIRPAGE.'node_modules/botstrap-icons/icons'?>">
     <link rel="stylesheet" href="<?php echo DIRPAGE.'lib/js/FullCalendar/main.min.css'; ?>">
     <link rel="stylesheet" href="<?php echo DIRPAGE.'lib/css/style.css'; ?>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
 </head>
 <?php session_start() ?>
 
