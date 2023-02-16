@@ -9,6 +9,7 @@ $date = new \DateTime($events['start']);
 ?>
 
 <div class="rounded-4" style="background-color:#d2fce4;">   
+
     <div class="border rounded-4 p-4 pb-3 mb-2" style="background-color: #022604">
         <h4 class="text-light">EDITAR SESSÃO</h4>
     </div>
@@ -16,27 +17,27 @@ $date = new \DateTime($events['start']);
     <form class="mx-5" name="formEdit" id="formEdit" method="post" action="<?php echo DIRPAGE.'controllers/EventsControllers/ControllerEdit.php'; ?>">
         <input class="form-control form-control-sm"  type="hidden" name="id" id="id" value="<?php echo $_GET['id']; ?>">
         <div>
-            <label class="form-label" for="title">NOME: </label>    
+            <label class="form-label m-0" for="title">NOME: </label>    
             <input class="form-control form-control-sm rounded-pill" type="text" name="title" id="title" value="<?php echo $events['title']; ?>"><br>
         </div>
 
         <div>
-            <label class="form-label" for="description">DESCRIÇÃO: </label>    
+            <label class="form-label m-0" for="description">DESCRIÇÃO: </label>    
             <input class="form-control form-control-sm rounded-pill" type="text" name="description" id="description" value="<?php echo $events['description']; ?>"><br>
         </div>
 
         <div>
-            <label class="form-label" for="date">DATA: </label>    
+            <label class="form-label m-0" for="date">DATA: </label>    
             <input class="form-control form-control-sm rounded-pill" type="date" name="date" id="date" value="<?php echo $date->format("Y-m-d"); ?>"><br>
         </div>
 
         <div>
-            <label class="form-label" for="time">COMEÇO: </label>    
+            <label class="form-label m-0" for="time">COMEÇO: </label>    
             <input class="form-control form-control-sm rounded-pill" type="time" name="time" id="time" value="<?php echo $date->format("H:i"); ?>"><br>
         </div>
 
         <div>
-            <label class="form-label" for="time">FIM: </label>    
+            <label class="form-label m-0" for="time">FIM: </label>    
             <input class="form-control form-control-sm rounded-pill" type="time" name="time" id="time" value="<?php echo $date->format("H:i"); ?>"><br>
         </div>
 

@@ -6,7 +6,9 @@ session_unset();
 ?>
 
 
-<div class="container d-flex justify-content-center">
+<div class="container d-flex justify-content-center flex-column col-8" style="margin-bottom: 10rem;">
+    <img  class="img-fluid" src="/img/logo_zuno.png" >
+    
     <div class="text-bg-light border-rounded mt-4 mb-4 p-5 rounded-3">
 
         <form name="formLogin" id="formLogin" method="post" action="<?php echo DIRPAGE.'controllers/LoginControllers/ControllerLogin.php';?>">  
@@ -45,5 +47,4 @@ session_unset();
         <a class="row justify-content-center link-secondary" style="text-decoration: none;" href="">esqueci minha senha</a>
     </div>
 </div>    
-        
-<?php include(DIRREQ."lib/html/footer.php"); ?>
+

@@ -1,5 +1,4 @@
-<body>
-
+<body class="bg">
     <!-- NAVBAR vvvvvv----->
         <nav style="margin-top: 10px; margin-left: 100px;">
 
@@ -30,6 +29,6 @@
         </nav>
 
         <!-- CONTEÚDO PRINCIPAL SERÁ CARREGADO AQUI vvvvv----->
-        <div class="container-fluid tab-content bg-light rounded-4" id="nav-tabContent">
+        <div class="container-fluid tab-content bg-light rounded-4 " id="nav-tabContent" >
             
 
