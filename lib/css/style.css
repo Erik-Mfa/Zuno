@@ -4,12 +4,19 @@
     font-family: 'Inter', sans-serif;
 }
 
-.bg{
-    background: rgb(159, 222, 158);
-    background-position: center;
-    background-size: cover;
+html {
+    margin: 0px;
     height: 100%;
-}
+    width: 100%;
+ }
+ 
+ body {
+    padding: 45px;
+    margin: 0px;
+    min-height: 90%;
+    width: 100%;
+    background: rgb(159, 222, 158);
+ }
 
 nav{
     margin-top: 100px;
@@ -21,8 +28,4 @@ nav{
     font-size: 80%;
     padding: 40px;
     margin: 30px auto;  
-}
-
-.content{
-    height: 45rem;
 }
