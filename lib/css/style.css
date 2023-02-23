@@ -15,12 +15,23 @@ html {
     margin: 0px;
     min-height: 90%;
     width: 100%;
-    background-image: url('../../img/bg.png');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
     
  }
+
+body.login {
+    background-image: url('../../img/bg.png');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+body.main {
+    background: rgb(73,103,94);
+    background: linear-gradient(45deg, rgba(73,103,94,1) 0%, rgba(119,245,205,1) 75%, rgba(73,103,94,1) 100%);  
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
 
 nav{
     margin-top: 100px;
@@ -32,4 +43,12 @@ nav{
     font-size: 80%;
     padding: 40px;
     margin: 30px auto;  
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: calc(-1 * var(--bs-nav-tabs-border-width));
+    background: #93d0be;
+    border: transparent;
+    border-top-left-radius: var(--bs-nav-tabs-border-radius);
+    border-top-right-radius: var(--bs-nav-tabs-border-radius);
 }

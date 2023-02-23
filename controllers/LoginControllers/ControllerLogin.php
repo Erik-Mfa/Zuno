@@ -23,6 +23,6 @@ if(!empty($btn)){
             header('Location: ' . DIRPAGE . 'views/user');
         }
     }else{
-        echo "Usuário não existe";
+        header('Location: ' . DIRPAGE . 'index.php?error=wronguser');
     }
 }

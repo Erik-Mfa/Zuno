@@ -16,10 +16,9 @@ if(!empty($btn)){
     $startEvent = $start->format("Y-m-d H:i:s");
     $endEvent = $start->modify('+3 hours')->format("Y-m-d H:i:s");
 
-    
-
     //Se já existe um evento naquele horário, não permitir
     $inUseEvent = $objEvents->getDuplicateEvents($startEvent, $endEvent);
+    
     if($inUseEvent >= 1){
         echo "Já existe um evento";
     }else{

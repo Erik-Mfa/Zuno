@@ -1,6 +1,6 @@
 <?php include("../../config/conexao.php")?>
 <?php include(DIRREQ."lib/html/header.php")?>
-<?php include(DIRREQ."lib/html/body.php")?>
+<?php include(DIRREQ."lib/html/nav.php")?>
 <?php include(DIRREQ."lib/html/form.php")?>
 <?php $date=new \DateTime($_GET['date'],new \DateTimeZone('America/Sao_Paulo')); ?>
 
